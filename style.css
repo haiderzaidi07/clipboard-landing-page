@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+
+.background{
+    background-image: url('images/bg-header-mobile.png');
+}
+
+.hero-logo{
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.hero-title{
+    color: hsl(210, 10%, 33%);
+    font-family: 'Bai Jamjuree', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.hero-description{
+    font-family: 'Bai Jamjuree', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.flex-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.ios{
+    font-family: 'Bai Jamjuree', Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: hsl(171, 66%, 44%);
+    border: none;
+    border-radius: 2rem;
+    width: 18rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 0.5px 0.5px hsl(171, 66%, 35%);
+}
+
+.ios:hover{
+    background-color: hsl(171, 66%, 55%);
+}
+
+.mac{
+    font-family: 'Bai Jamjuree', Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: hsl(233, 100%, 69%);
+    border: none;
+    border-radius: 2rem;
+    width: 18rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 0.5px 0.5px hsl(233, 100%, 60%);
+}
+
+.mac:hover{
+    background-color: hsl(233, 100%, 75%);
+}
+
+.below-hero-title{
+    font-family: 'Bai Jamjuree', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+    text-align: center;
+    padding: 10rem 1rem 1rem 1rem;
+}
+
+.below-hero-description{
+    font-family: 'Bai Jamjuree', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.monitor-list-image{
+    padding: 2rem 1rem;
+}
+
+.list{
+    padding-left: 0;
+}
+
+.list-item{
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+.list-item-title{
+    color: hsl(210, 10%, 33%);
+    font-family: 'Bai Jamjuree', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 0.3rem;
+}
+
+.list-item-description{
+    font-family: 'Bai Jamjuree', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+    text-align: center;
+}
+
+.devices-title{
+    color: hsl(210, 10%, 33%);
+    font-family: 'Bai Jamjuree', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 10rem 1.5rem 1rem 1.5rem;
+}
+
+.devices-description{
+    font-family: 'Bai Jamjuree', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.devices-image{
+    padding: 3rem 0;
+}
+
+.below-devices-title{
+    color: hsl(210, 10%, 33%);
+    font-family: 'Bai Jamjuree', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.below-devices-description{
+    font-family: 'Bai Jamjuree', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+    text-align: center;
+    padding: 0.5rem 1rem 2rem 1rem;
+}
+
+.card-icon{
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.card-title{
+    color: hsl(210, 10%, 33%);
+    font-family: 'Bai Jamjuree', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.card-description{
+    font-family: 'Bai Jamjuree', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+    text-align: center;
+    padding: 1rem;
+}
+
+.companies-list{
+    padding: 5rem 0;
+}
+
+.company{
+    list-style: none;
+    padding-bottom: 3rem;
+}
+
+.company-image{
+    margin: 0 auto;
+}
+
+.download{
+    padding-bottom: 6rem;
+}
+
+.download-title{
+    font-family: 'Bai Jamjuree', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+    text-align: center;
+    padding: 0 2.5rem;
+}
+
+.download-description{
+    font-family: 'Bai Jamjuree', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+    text-align: center;
+    padding: 1rem 2.5rem 2rem 2.5rem;
+}
+
+footer{
+    background-color: hsl(201, 11%, 86%);
+}
+
+.footer-logo{
+    width: 3em;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.links{
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link{
+    font-family: 'Bai Jamjuree', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    list-style: none;
+    padding-bottom: 1.5rem;
+}
+
+.link a{
+    color: hsl(210, 10%, 33%);
+    text-decoration: none;
+}
+
+.link a:hover{
+    color: hsl(171, 66%, 44%);
+}
+
+.logos{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 5rem 3rem 5rem;
+}
+
+.logo{
+    list-style: none;
+}
+
+.logo svg:hover{
+    color: hsl(171, 66%, 44%);
+}
+
+@media (min-width: 700px){
+    .background{
+        background-image: url('images/bg-header-desktop.png');
+    }
+    
+    .hero-description{
+        padding: 0 15rem 8rem 15rem;
+    }
+
+    .flex-items{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .below-hero-title{
+        padding-top: 15rem;
+    }
+
+    .monitor-list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .monitor-list-image{
+        width: 50%;
+    }
+
+    .list{
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 10rem;
+    }
+    
+    .list-item-title{
+        text-align: left;
+    }
+    
+    .list-item-description{
+        text-align: left;
+
+    }
+
+    .devices-image{
+        margin: 0 auto;
+    }
+
+    .cards{
+        display: flex;
+        padding: 5rem 7rem;
+        gap: 3rem; 
+    }
+
+    .card{
+        width: 33.3%;
+    }
+
+    .companies-list{
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 10rem;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-logo{
+        margin: 0;
+        width: 4%;
+    }
+
+    .links{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .link{
+        width: 33.3%;
+        padding-top: 1rem;
+        font-weight: 600;
+    }
+
+    .social-links{
+        width: 10%;
+    }
+    
+    .logos{
+        padding: 0;
+        min-height: 100%;
+        align-items: center;
+    }
+}
